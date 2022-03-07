@@ -9,7 +9,7 @@ public class Test0 {
 		//Upcasting
 		WebDriver driver = new ChromeDriver();
 		//Enter the URL(Copy and Paste)
-		driver.get("https://www.amazon.com/");
+		driver.get("https://www.skillrary.com//");
 		//Get the Title
 		System.out.println(driver.getTitle());
 		//Get the current URL

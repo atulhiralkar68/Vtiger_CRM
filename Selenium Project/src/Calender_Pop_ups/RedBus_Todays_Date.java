@@ -4,7 +4,10 @@ import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
+import javax.xml.xpath.XPath;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -14,6 +17,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import locators.Xpath;
 
 public class RedBus_Todays_Date {
 
@@ -48,6 +53,7 @@ public class RedBus_Todays_Date {
 		System.out.println("Todays Date : "+ day4 + "-" + date +"-" + month + "-" + year );
 
 		driver.get("https://www.redbus.com/");
+		driver.findElement(By.xpath("//button[text()='Accept All']")).click();
 		//Actions action = new Actions(driver);
 		//action.click().perform();
 
