@@ -1,4 +1,4 @@
-3package POM;
+package POM;
 
 import java.util.concurrent.TimeUnit;
 
