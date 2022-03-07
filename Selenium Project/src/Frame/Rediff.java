@@ -46,7 +46,6 @@ public class Rediff{
 	    driver.findElement(By.id("jqi_state0_buttonOk")).click();
 	    Thread.sleep(3000);//To see Execution We use Thread Here
 	    driver.close();    
-		
 	}
 
 }
