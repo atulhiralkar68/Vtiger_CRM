@@ -17,7 +17,6 @@ public class Link {
 		//driver.findElement(By.id("forgetPasswordEmailOrUsername")).sendKeys("admin");
 		//driver.findElement(By.xpath("//div[text()='Request Login Info']")).click();
 		//driver.findElement(By.id("toLoginPageLink")).click();
-		
 	}
 
 }

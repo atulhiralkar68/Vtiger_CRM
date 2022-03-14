@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ToTakeScreenshot {
 
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -21,13 +22,6 @@ public class ToTakeScreenshot {
 		File tempScreenshot = ts.getScreenshotAs(OutputType.FILE);
 		File screenshot = new File("./errorshots/screenshot1.png");
 		tempScreenshot.renameTo(screenshot);
-		driver.close();
-		
-		
-		
-		
-		
-	}
-	
-
+		driver.close();	
+	}	
 }

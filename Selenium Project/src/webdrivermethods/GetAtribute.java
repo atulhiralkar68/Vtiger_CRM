@@ -2,13 +2,14 @@ package webdrivermethods;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GetAtribute {
 
 	public static void main(String[] args) {
 		System.setProperty("Webdriver.chrome.driver","./drivers/chromedriver.exe");
-		ChromeDriver driver=new ChromeDriver();
+		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://crmaccess.vtiger.com/log-in/");
 		driver.findElement(By.name("username")).clear();

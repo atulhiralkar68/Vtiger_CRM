@@ -23,5 +23,4 @@ public class JSScrollingBy_XDirection {
         js.executeScript("window.scrollBy(1000,0);");
         
 	}
-
 }

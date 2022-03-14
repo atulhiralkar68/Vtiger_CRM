@@ -38,10 +38,6 @@ public class Test4 {
 	    	System.out.println("Fail:Home page Not Display");
 	    }
 	    driver.close();
-	    
-	    
-		
-
 	}
 
 }

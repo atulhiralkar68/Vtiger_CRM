@@ -1,7 +1,6 @@
 package Calender_Pop_ups;
 
 import java.time.LocalDateTime;
-import java.time.Month;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -18,7 +17,7 @@ public class Departure_6_Month_Later {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
 		
 		LocalDateTime ldt = LocalDateTime.now().plusMonths(6);
 		String monthName = ldt.getMonth().toString();

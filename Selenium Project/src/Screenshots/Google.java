@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 /***
  * 
- * @author Shree
+ * @author AtulHiralkar
  *
  */
 @SuppressWarnings("deprecation")
@@ -22,10 +22,7 @@ public class Google {
 		driver.get("https://www.google.co.in");
 		driver.findElement(By.xpath("//a[@aria-label='Google apps']")).click();
 		
-		driver.findElement(By.xpath("//span[text()='Gmail']"));
-		
-		
-		
+		driver.findElement(By.xpath("//span[text()='Gmail']"));	
 	}
 
 }

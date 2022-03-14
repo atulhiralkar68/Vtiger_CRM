@@ -15,13 +15,13 @@ public class ToClickOnDisableElement {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);//We take Only 2 Sec Because it takes long time to scroll if we take 10 sec.
-		
+
 		driver.get("https://www.oracle.com/java/technologies/downloads/");
 		driver.findElement(By.linkText("jdk-11.0.13_linux-aarch64_bin.deb")).click();
 		WebElement disableElement = driver.findElement(By.xpath("//a[@class='download-file icn-lock']"));
-		
+
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-	     js.executeScript("argument[0].click();", disableElement);
+		js.executeScript("argument[0].click();", disableElement);
 	}
 
 }

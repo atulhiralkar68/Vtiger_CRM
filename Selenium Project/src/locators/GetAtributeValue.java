@@ -22,11 +22,6 @@ public class GetAtributeValue {
 		int g=password.width;
 		System.out.println(h);
 		System.out.println(g);
-		
-		
-		
-		
-
 	}
 
 }
