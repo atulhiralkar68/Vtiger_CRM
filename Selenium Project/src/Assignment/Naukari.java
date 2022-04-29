@@ -13,9 +13,6 @@ public class Naukari {
 		System.out.println(driver.getCurrentUrl());
 		System.out.println(driver.getPageSource());
 		driver.close();
-		
-		
-		
 	}
 
 }

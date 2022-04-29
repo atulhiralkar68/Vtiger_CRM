@@ -20,7 +20,7 @@ public class ToTakeScreenshot {
 		driver.get("https://www.swiggy.com/");
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File tempScreenshot = ts.getScreenshotAs(OutputType.FILE);
-		File screenshot = new File("./errorshots/screenshot1.png");
+		File screenshot = new File("./errorshots/screenshot7.png");
 		tempScreenshot.renameTo(screenshot);
 		driver.close();	
 	}	

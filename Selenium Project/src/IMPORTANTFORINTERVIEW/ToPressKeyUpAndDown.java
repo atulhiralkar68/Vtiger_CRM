@@ -11,11 +11,11 @@ public class ToPressKeyUpAndDown {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+
 		driver.manage().timeouts().pageLoadTimeout(3, TimeUnit.SECONDS);
-		
+
 		driver.get("https://kalkifashion.com");
-		
+
 	}
 
 }

@@ -14,14 +14,14 @@ public class ContexClick {
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	    
-		driver.get("https://www.facebook.com/");
+
+		driver.get("https://www.redbus.com/");
 		//here we create object for action class to use action class methods 
 		Actions actions = new Actions(driver);
-	
+
 		//WebElement reletiveElement = driver.findElement(By.xpath("//input[@placeholder='Bengaluru']"));
 		actions.contextClick().perform();
-		//driver.close();
+		driver.close();
 	}
 
 }

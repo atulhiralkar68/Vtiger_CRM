@@ -21,6 +21,7 @@ public class Instagram_Login_001 {
 		System.out.println("Chrome Driver Launch Successfully");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
+	
 		//Ste[p 2: Enter the valid  URL
 		driver.get("https://www.instagram.com/");
 		String expectedLoginPageTitle="Instagram";
@@ -63,6 +64,7 @@ public class Instagram_Login_001 {
 	     }else {
 	    	 System.err.println("Fail:Home page is not Display successfully");
 	     }
+	     
 	}
 
 }

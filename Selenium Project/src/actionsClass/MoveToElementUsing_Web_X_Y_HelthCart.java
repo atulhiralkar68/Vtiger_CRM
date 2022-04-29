@@ -14,14 +14,12 @@ public class MoveToElementUsing_Web_X_Y_HelthCart {
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	    
+
 		driver.get("https://www.healthkart.com/reviews/muscleblaze-super-gainer-xxl-6-6-lb-mango-burst?storeVariantId=160271&productWise=true");
 		//here we create object for action class to use action class methods 
 		Actions actions = new Actions(driver);
 		WebElement reletiveElement = driver.findElement(By.xpath("//ul[@class=\"rating-stars js-give-star\"]"));
-	    
-		actions.moveToElement(reletiveElement, 100, 0).click().perform();//X AND Y POSITION FROM CENTER OF RELATIVE ELEMENT
-	
-	}
 
+		actions.moveToElement(reletiveElement, 100, 0).click().perform();//X AND Y POSITION FROM CENTER OF RELATIVE ELEMENT
+	}
 }

@@ -9,10 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UrbunLadder1 {
@@ -34,8 +31,7 @@ public class UrbunLadder1 {
 		 
 		 wait.until(ExpectedConditions.visibilityOf(productPrice));
 		 String price = productPrice.getText();
-		 System.out.println(price);
-		
+			
 		String parentwindowid = driver.getWindowHandle();
 		Set<String> allwindowsid = driver.getWindowHandles();
 		allwindowsid.remove(parentwindowid);
@@ -53,13 +49,14 @@ public class UrbunLadder1 {
 			}
 		}
 		int productCost = Integer.parseInt(cost);
+		System.out.println("The product cost is "+productCost);
 		
 		if(productCost>=20000) {
 			System.out.println("The product cost is more than 20000");
 		}else {
 			System.out.println("The product cost is less than 20000");
 		}
-		
+		 
 		productPrice.click();
 		
 		String parentwindowid1 = driver.getWindowHandle();

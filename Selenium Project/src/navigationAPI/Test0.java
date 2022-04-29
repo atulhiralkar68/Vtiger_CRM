@@ -29,9 +29,6 @@ public class Test0 {
 		
 		//Close window
 		driver.close();
-		
-		
-
 	}
 
 }

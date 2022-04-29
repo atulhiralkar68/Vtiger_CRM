@@ -9,15 +9,13 @@ public class NaukariQuite {
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().fullscreen();
 		driver.get("https://www.naukri.com/");
-		
-		System.out.println(driver.getTitle());
-		
-		System.out.println(driver.getCurrentUrl());
-		
-		//System.out.println(driver.getPageSource());
-		
-		driver.quit();
-		
-	}
 
+		System.out.println(driver.getTitle());
+
+		System.out.println(driver.getCurrentUrl());
+
+		//System.out.println(driver.getPageSource());
+
+		driver.quit();
+	}
 }

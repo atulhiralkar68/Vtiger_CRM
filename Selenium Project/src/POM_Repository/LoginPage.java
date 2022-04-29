@@ -32,5 +32,17 @@ public class LoginPage {
 	public WebElement getLoginButton() {
 		return loginButton;
 	}
+
+	public WebElement getsubIdTextField() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public WebElement getContinueButton() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
 	
 }

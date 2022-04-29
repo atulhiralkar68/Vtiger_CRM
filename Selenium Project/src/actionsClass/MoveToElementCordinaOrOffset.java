@@ -13,7 +13,7 @@ public class MoveToElementCordinaOrOffset {
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	    
+
 		driver.get("https://www.kalkifashion.com/");
 		//here we create object for action class to use action class methods 
 		Actions actions = new Actions(driver);
@@ -21,8 +21,6 @@ public class MoveToElementCordinaOrOffset {
 		//Here we move the curser to the element By using Cordinate x and y
 		actions.moveByOffset(692, 135).perform();
 		//Here we use click method to click on perticular element pasing element as argument.
-		actions.click(driver.findElement(By.linkText("Sherwanis"))).perform();//perform is cumpulsarry here 
-		
+		actions.click(driver.findElement(By.linkText("Sherwanis"))).perform();//perform is cumpulsarry here 	
 	}
-
 }

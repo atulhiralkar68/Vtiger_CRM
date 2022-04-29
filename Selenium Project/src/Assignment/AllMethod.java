@@ -21,7 +21,7 @@ public class AllMethod {
 		driver.get("https://www.skillrary.com/");
 		//Thread for time to see .....
 		Thread.sleep(2000);
-	    //Minimize the Window
+		//Minimize the Window
 		driver.manage().window().minimize();
 		Thread.sleep(3000);
 		driver.manage().window().maximize();
@@ -45,23 +45,22 @@ public class AllMethod {
 		//directly jump to any page use navigateTo( ) method
 		driver.navigate().to("https://www.facebook.com/");
 		//driver.manage().window().fullscreen();
-		
+
 		Point position = driver.manage().window().getPosition();
-	    System.out.println(position.x);
-	    System.out.println(position.y);
+		System.out.println(position.x);
+		System.out.println(position.y);
 		Dimension size = driver.manage().window().getSize();
 		System.out.println(size);
 		//driver.manage().window().setSize(x=10,y=20);.............Not Working
 		driver.switchTo().activeElement().sendKeys("Atul",Keys.BACK_SPACE,Keys.TAB);
 		//Here it enter Atul And Delet 'l'.and  move curcer to next box using TAB key
-		
-		
+
 		driver.switchTo().activeElement().sendKeys("Atul");
 		Thread.sleep(3000);
 		//driver.switchTo().window("https://www.skillrary.com/category/business");
 		//Thread.sleep(2000);
 		driver.close();
-		
+
 	}
 
 }

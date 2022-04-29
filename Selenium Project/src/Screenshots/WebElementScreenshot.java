@@ -19,18 +19,14 @@ public class WebElementScreenshot {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		
+
 		driver.get("https://www.swiggy.com/");
 		//File tempFile = driver.findElement(By.xpath("//span[text()='Locate Me']")).getScreenshotAs(OutputType.FILE);
 		//File tempFile = driver.findElement(By.xpath("//span[text()='FIND FOOD']")).getScreenshotAs(OutputType.FILE);
 		File tempFile = driver.findElement(By.xpath("//img[@src='https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp']")).getScreenshotAs(OutputType.FILE);
 		//span[text()='FIND FOOD']
-		File destFile = new File("./errorshots/webelwment2.png");
+		File destFile = new File("./errorshots/webelwment01.png");
 		FileUtils.copyFile(tempFile, destFile);
 		driver.close();
-		
-		
-	
 	}
-
 }
